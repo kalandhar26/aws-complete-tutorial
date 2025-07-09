@@ -7,7 +7,7 @@ spring:
     name: aws-cloudwatch
 
 server:
-  port: 8083
+  port: 8084
 
 # This is used to publish the message
 log:

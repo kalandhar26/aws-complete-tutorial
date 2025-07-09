@@ -1,16 +1,21 @@
-region: ap-south-1
-cloud:
+aws:
+  access_key: ${AWS_ACCESS_KEY}
+  secret_key: ${AWS_SECRET_KEY}
+  region: ${REGION_SOUTH}
+
   aws:
     region:
       static: ap-south-1
       auto: false
     stack:
       auto: false
+
 spring:
   application:
     name: aws-s3
   main:
     allow-bean-definition-overriding: true
+
 logging:
   level:
     com:
@@ -21,4 +26,4 @@ logging:
           InstanceMetadataServiceResourceFetcher: error
 
 server:
-  port: 8080
+  port: 8083
