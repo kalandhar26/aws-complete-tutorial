@@ -1,0 +1,1 @@
+-> This application demonstrates amazon s3 bucket.

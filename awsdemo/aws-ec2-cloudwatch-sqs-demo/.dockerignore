@@ -1,0 +1,4 @@
+.git
+.mvn
+target/*.jar
+!target/aws-ec2-cloudwatch-sqs-demo-1.0.0.jar

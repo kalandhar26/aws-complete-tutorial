@@ -1,0 +1,15 @@
+region: ap-south-1
+
+spring:
+  application:
+    name: aws-cloudwatch
+
+server:
+  port: 8083
+
+# This is used to publish the message
+log:
+  group:
+    name: mu-user-crud-app
+  stream:
+    name: my-user-crud-app-log-stream
