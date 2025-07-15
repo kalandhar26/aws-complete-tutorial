@@ -14,4 +14,18 @@ public class AwsSqsConsumer {
         log.info("message received from queue /'testsqskalandhar/' and message{}", message);
         System.out.println("Message received:" + message);
     }
+
+    // Lamda Trigger Destination Example
+    @SqsListener(value = "success-queue", deletionPolicy = SqsMessageDeletionPolicy.ON_SUCCESS)
+    public void mySuccessConsumer(String message) {
+        log.info("message received from queue /'success-queue/' and message{}", message);
+        System.out.println("Success Message received:" + message);
+    }
+
+    // Lamda Trigger Destination Example
+    @SqsListener(value = "failure-queue", deletionPolicy = SqsMessageDeletionPolicy.ON_SUCCESS)
+    public void myFailureConsumer(String message) {
+        log.info("message received from queue /'failure-queue/' and message{}", message);
+        System.out.println("Failed Message received:" + message);
+    }
 }

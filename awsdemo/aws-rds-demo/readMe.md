@@ -1,0 +1,1 @@
+url: jdbc:mysql://myfirstdbidentifier.c5ajdhbdid8jahd9.ap-south-1.rds.amazonaws.com:3306/MyTestDatabase

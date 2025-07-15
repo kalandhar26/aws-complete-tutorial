@@ -21,13 +21,13 @@ import java.util.Collections;
 @Configuration
 public class AwsSqsConfig {
 
-    @Value("${accessKey}")
+    @Value("${aws.access_key}")
     private String accessKey;
 
-    @Value("${secretKey}")
+    @Value("${aws.secret_key}")
     private String secretKey;
 
-    @Value("${region}")
+    @Value("${aws.region}")
     private String region;
 
     @Bean

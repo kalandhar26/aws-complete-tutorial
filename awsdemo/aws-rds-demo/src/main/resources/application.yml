@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://<identifier>.<get_from_aws>.<region>.rds.amazonaws.com:3306/<Your_DB>
+    username: <username>
+    password: <pwd>
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+server:
+  port: 8085
